@@ -1,0 +1,3 @@
+ds_map_destroy(ball_to_debuff)
+ds_map_destroy(new_ball_to_debuff)
+ds_list_destroy(colliding_balls)

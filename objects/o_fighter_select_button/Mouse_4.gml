@@ -1,0 +1,1 @@
+owner_manager.add_fighter(associated_weapon)

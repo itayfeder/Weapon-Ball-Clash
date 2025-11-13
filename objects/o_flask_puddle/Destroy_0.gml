@@ -1,0 +1,2 @@
+ds_map_destroy(dps_per_ball)
+ds_list_destroy(colliding_balls)

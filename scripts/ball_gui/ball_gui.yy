@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"ball_gui",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"ball_gui",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,0 +1,1 @@
+o_ball_select_manager.display_fighter(associated_weapon)

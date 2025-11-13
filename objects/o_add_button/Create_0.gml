@@ -1,0 +1,1 @@
+pixel_size = icon_size / 16

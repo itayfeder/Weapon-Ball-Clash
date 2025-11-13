@@ -1,0 +1,20 @@
+// Inherit the parent event
+event_inherited();
+
+on_initialize = function (_owner) {
+	_owner.create_stat("attack_damage", 2)
+}
+
+on_clone = function (_clone_ball) {
+	_clone_ball.set_stat("attack_damage", owner.attack_damage)
+}
+
+on_weapon_hit_ball = function (_other_ball) {
+	if (!owner.are_allies(_other_ball) && owner.deal_damage(_other_ball, owner.attack_damage) && _other_ball.id != owner.id) {
+		owner.attack_damage += 1
+	}
+}
+
+get_display_stats = function () {
+	return ["Attack Damage: " + string(owner.attack_damage)]
+}

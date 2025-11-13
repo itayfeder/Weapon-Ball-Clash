@@ -1,0 +1,2 @@
+ds_list_destroy(tick_to_angle)
+ds_list_destroy(new_tick_to_angle)

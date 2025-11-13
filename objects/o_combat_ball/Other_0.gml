@@ -1,0 +1,2 @@
+kill()
+instance_destroy()

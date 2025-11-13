@@ -1,0 +1,2 @@
+ds_list_destroy(collision_blacklist)
+ds_list_destroy(colliding_balls)

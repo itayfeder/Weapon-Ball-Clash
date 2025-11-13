@@ -1,0 +1,1 @@
+prev_match_actors_size = ds_list_size(match_actors)

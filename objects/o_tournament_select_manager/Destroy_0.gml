@@ -1,0 +1,2 @@
+ds_list_destroy(fighter_select_buttons)
+ds_list_destroy(add_buttons)
