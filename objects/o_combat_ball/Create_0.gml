@@ -7,7 +7,6 @@ if !disabled {
 	yspd = irandom_range(-20, 20)
 }
 
-
 weapons = ds_list_create()
 status_effects = ds_list_create()
 allies = ds_list_create()
@@ -112,6 +111,11 @@ kill = function () {
 	for (var i = 0; i < ds_list_size(weapons); i++) {
 		instance_destroy(weapons[|i])
 	}
+	
+	if movement_engine != noone {
+		instance_destroy(movement_engine)	
+	}
+	
 	instance_destroy()
 }
 

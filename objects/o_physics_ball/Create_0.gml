@@ -5,6 +5,8 @@ grav = 0.3
 
 circle_color = color
 
+movement_engine = noone
+
 on_ball_hit_ball_base = function (_other_ball) {
 	
 }

@@ -33,6 +33,13 @@ function Match() constructor
 			_ball_object.x = irandom_range(room_width / 2 - 200, room_width / 2 + 200)
 			_ball_object.y = irandom_range(room_height / 2 - 200, room_height / 2 + 200)
 			
+			//if i == 0 {
+			//	var movement = instance_create_layer(0, 0, "Others", o_pause_dash_movement, {
+			//		owner: _ball_object
+			//	})
+			//	_ball_object.movement_engine = movement
+			//}
+			
 			ds_list_add(ball_objects, _ball_object)
 		}
 	}

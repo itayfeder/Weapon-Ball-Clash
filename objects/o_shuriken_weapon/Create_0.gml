@@ -34,6 +34,7 @@ function summon_shuriken (_weapon) {
 	shuriken.yspd = lengthdir_y(shuriken.projectile_speed, shuriken.angle)
 	
 	shuriken.self_bounces = _weapon.owner.bounces
+	shuriken.skin = skin
 }
 
 if !disabled

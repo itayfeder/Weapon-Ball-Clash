@@ -32,6 +32,8 @@ function summon_fireball (_weapon) {
 	
 	fireball.blast_damage = _weapon.owner.blast_damage
 	fireball.blast_radius = _weapon.owner.blast_radius
+	
+	fireball.skin = skin
 }
 
 if !disabled

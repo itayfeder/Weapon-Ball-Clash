@@ -28,6 +28,7 @@ function summon_flask (_weapon) {
 	flask.yspd = lengthdir_y(flask.projectile_speed, flask.angle)
 	
 	flask.puddle_dps = _weapon.owner.puddle_dps
+	flask.skin = skin
 }
 
 if !disabled

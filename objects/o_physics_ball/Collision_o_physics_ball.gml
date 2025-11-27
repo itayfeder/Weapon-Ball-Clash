@@ -1,3 +1,6 @@
+if movement_engine != noone {
+	movement_engine.on_ball_hit_ball(other)
+}
 on_ball_hit_ball_base(other)
 	
 var dx = other.x - self.x

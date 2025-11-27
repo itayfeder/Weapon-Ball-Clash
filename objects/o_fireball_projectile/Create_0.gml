@@ -11,6 +11,8 @@ on_collide_wall = function (_vertical) {
 	fireball.base_radius = blast_radius
 	fireball.blast_damage = blast_damage
 	
+	fireball.skin = skin
+	
 	instance_destroy()
 }
 
@@ -21,5 +23,7 @@ on_projectile_hit_ball = function (_projectile, _other_ball) {
 
 		fireball.base_radius = blast_radius
 		fireball.blast_damage = blast_damage
+		
+		fireball.skin = skin
 	}
 }

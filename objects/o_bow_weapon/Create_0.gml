@@ -26,6 +26,8 @@ function summon_arrow (_weapon) {
 	arrow.rotation = _weapon.angle
 	arrow.xspd = lengthdir_x(arrow.projectile_speed, arrow.angle)
 	arrow.yspd = lengthdir_y(arrow.projectile_speed, arrow.angle)
+	
+	arrow.skin = skin
 }
 
 if !disabled

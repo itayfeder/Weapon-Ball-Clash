@@ -5,6 +5,8 @@ yspd = 0
 angle = 0
 rotation = 0
 
+skin = 0
+
 on_collide_wall = function (_vertical) {
 	instance_destroy()
 }
