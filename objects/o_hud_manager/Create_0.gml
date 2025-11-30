@@ -1,7 +1,6 @@
 
 middle_hole_size = 768
 
-
 draw_ball_stats = function () {
 	var starting_x = 200
 	var starting_y = room_height / 2 - 450
@@ -32,7 +31,8 @@ draw_ball_stats = function () {
 			.starting_format("f_impact", balls[i].get_ball_color())
 			.scale(1)
 			.align(fa_center, fa_middle)
-			.sdf_outline(c_black, 3)
+		
+		outline_text_if_ball_allowed(title, c_black, 3, balls[i].object_index)
 		
 		title = get_text_adjusted_to_width(1, title, box_width * 0.9)
 		var title_size = title.get_bbox(room_width, room_height).height
@@ -47,7 +47,8 @@ draw_ball_stats = function () {
 				.starting_format("f_impact", balls[i].get_ball_color())
 				.scale(0.8)
 				.align(fa_center, fa_middle)
-				.sdf_outline(c_black, 2)
+			
+			outline_text_if_ball_allowed(string_object, c_black, 2, balls[i].object_index)
 			
 			string_object = get_text_adjusted_to_width(0.8, string_object, box_width * 0.95)
 			

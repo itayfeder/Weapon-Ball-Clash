@@ -70,7 +70,8 @@ display_fighter = function (_ball_id) {
 			.starting_format("f_impact", current_viewed_fighter.get_ball_color())
 			.scale(1)
 			.align(fa_center, fa_middle)
-			.sdf_outline(c_black, 3)
+		
+		outline_text_if_ball_allowed(viewed_figher_title, c_black, 3, _ball_id)
 		
 		viewed_figher_title = get_text_adjusted_to_width(1, viewed_figher_title, row_length * 0.9)
 	}

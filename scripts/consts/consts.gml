@@ -18,6 +18,7 @@ enum BALL_COLORS {
 	FLASK = make_color_rgb(0, 154, 0),
 	LANCE = make_color_rgb(251, 229, 151),
 	GRIMOIRE = make_color_rgb(143, 131, 149),
+	BLACK_IMMOVABLE_ORB = make_colour_rgb(0, 0, 0),
 	
 	LASER = make_color_rgb(219, 85, 52),
 	SLAP_HAND = make_colour_rgb(80, 86, 150),
