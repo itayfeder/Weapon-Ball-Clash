@@ -20,8 +20,10 @@ function draw_winner_title(_ball) {
 	var title = scribble("[scale,1.5]" + name + " Wins!")
 		.starting_format("f_impact", _ball.get_ball_color())
 		.align(fa_center, fa_middle)
-		.sdf_outline(c_black, 5)
-		.wrap(700)
+		
+	outline_text_if_ball_allowed(title, c_black, 5,_ball.object_index)
+	
+	title = title.wrap(700)
 		
 	title.draw(room_width / 2, room_height / 2)
 }
@@ -36,4 +38,10 @@ function draw_type_winner_title(_ball) {
 		
 	title.draw(room_width / 2, room_height / 2)
 	_ball_obj.kill()
+}
+
+function outline_text_if_ball_allowed(string_object, color, thickness, _ball) {
+	if !array_contains(global.BALLS_WITHOUT_OUTLINES, _ball) {
+		string_object = string_object.sdf_outline(color, thickness)
+	}
 }
